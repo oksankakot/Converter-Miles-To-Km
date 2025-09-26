@@ -5,7 +5,7 @@ public class Main {
     private static final double CONV_K = 1.60934;
 
     public static void main(String[] args) {
-        System.out.println("App for converting miles to kilometers.");
+        System.out.println("App for converting miles to kilometers and vice versa.");
 
         double milesValue = 36;
         double kilometersValue = 15;
