@@ -8,12 +8,21 @@ public class Main {
         System.out.println("App for converting miles to kilometers.");
 
         double milesValue = 36;
+        double kilometersValue = 15;
         double kilometersResult = convMilesToKilometers(milesValue);
-        System.out.println("Result of conversion of " + milesValue +  " miles is " + kilometersResult + " kilometers.");
+        double milesResult = convKilometersToMiles(kilometersValue);
+        System.out.println("Result of conversion of " + milesValue +  " miles is "
+                + kilometersResult + " kilometers.");
+        System.out.println("Result of conversion of " + kilometersValue +
+                " kilometers is " + milesResult + " miles.");
     }
 
     private static double convMilesToKilometers(double mls) {
         return mls * CONV_K;
+    }
+
+    private static double convKilometersToMiles(double kms) {
+        return kms / CONV_K;
     }
 
 
